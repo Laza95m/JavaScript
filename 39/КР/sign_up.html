@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        
+        .container{
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .input_wrapper {
+            display: flex; 
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .input_wrapper label {
+            font-weight: 600;
+        }
+
+        .input_wrapper_messages {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Registration</h2>
+        <form action="" id="myForm">
+            <div class="input_wrapper">
+                <div class="input_wrapper_messages">
+                    <label for="">Email:</label> 
+                    <span style="color: red" id="email_error"></span>
+                </div>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input_wrapper">
+                <div class="input_wrapper_messages">
+                    <label for="">Password:</label>
+                    <span style="color: red" id="label_error"></span>
+                </div>
+                
+                <input type="password" name="pass" id="pass" required>
+            </div>
+            <div class="input_wrapper">
+                <div class="input_wrapper_messages">
+                    <label for="">Repeat password:</label> 
+                    <span style="color: red" id="confPass_error"></span>
+                </div>
+                <input type="password" name="confPass" id="confPass" required>
+            </div>
+
+            <div class="input_wrapper">
+                <button type="submit" id="btn">
+                    Sign Up
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

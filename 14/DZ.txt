@@ -1,0 +1,54 @@
+1)
+ Without. Напишите функцию, 
+которая возвращает новый объект без указанных значений
+
+without(object, [key1, key2, ..., keyN])
+
+2)
+IsEmpty. Напишите функцию, 
+которая делает поверхностную проверку объекта на пустоту.
+
+isEmpty(object) -> true/false
+
+3)
+IsEqual. Напишите функцию, 
+которая поверхностно сравнивает два объекта
+
+isEqual(object1, object2) -> true/false
+
+4)
+IsEmptyDeep. Напишите функцию, 
+которая делает глубокую проверку на пустоту объекта.
+
+object {
+  user {
+    name: undefined
+  }
+}
+object2 {
+  user {
+    name: 'alex'
+  }
+  permission: null
+}
+
+isEmptyDeep(object) -> true
+isEmptyDeep(object2) -> false
+
+5)
+IsEqualDeep. Напишите функцию, 
+которая делает глубокое сравнение объектов.
+
+6)
+Intersection. Напишите функцию, 
+которая поверхностно находит пересечения объектов 
+и возвращает объект пересечений
+
+object1 = {a:1, b:2}  object2 = {b:2, c:3}
+instersection(object1, object2) -> {b:2}
+
+7)
+IntersectionDeep. Напишите функцию, которая глубоко 
+находит пересечения объектов и возвращает объект пересечений.
+
+

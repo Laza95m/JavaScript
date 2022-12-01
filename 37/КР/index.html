@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpor t" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container {
+            width: 100px;
+            height: 100px;
+        }
+
+        .color-red {
+            background: red;
+        } */
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            height: 200px;
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div id="container" style="display: flex; justify-content: center; height: 100vh; width: 100vw; background-color:antiquewhite;">
+        <span id="result"></span>
+    </div>
+
+    <!-- <div class="container">
+        <div class="wrapper">
+            <p>Randon number:</p>
+            <h3 id="result"></h3>
+            <input type="button" 
+                value="Generate random number" 
+                id="randomGenerator"
+            >
+        </div>
+    </div> -->
+    <script src="script.js"></script>
+    
+    <!-- <div id="container">
+        <div id="one">
+            <p id="hello">Hello!</p>
+        </div>
+    </div> -->
+
+    <script>
+        // 1 вставить <p>World!</p> после Hello!
+        // let p = document.createElement('p')
+        // p.innerText = 'World!'
+        // document.querySelector('#one').append(p)
+        // document.querySelector('#hello').after(p)
+        // document.querySelector('#hello').before(p)
+        // document.querySelector('#one').prepend(p)
+
+        // let div = document.querySelector('#one')
+        // div.insertAdjacentHTML('afterbegin','<p>World!</p>')
+        // div.insertAdjacentHTML('beforeend', '<p>World!</p>')
+        // div.insertAdjacentHTML('afterend', '<p>World!</p>')
+        // div.insertAdjacentHTML('beforebegin', '<p>World!</p>')
+
+        // let p = document.querySelector('#hello')
+        // let cont = document.querySelector('#container')
+
+        // cont.append(p)
+    </script>
+
+    <!-- <ul id="ul">
+
+    </ul> -->
+    <!-- <script>
+    function getListContent() {
+        let fragment = new DocumentFragment();
+
+        for(let i=1; i<=3; i++) {
+            let li = document.createElement('li');
+            li.append(i);
+            fragment.append(li)
+        }
+        return fragment
+    }
+    
+    ul.append(getListContent()); // (*)
+    </script> -->
+
+    <!-- <div class="container" onclick="changeColor(this.classList)" >
+        Hello World!
+    </div> -->
+
+    <!-- <input type="text" id="a1" onclick="asd()">
+
+    <script>
+        function asd(){
+            alert(1)
+            alert(2)
+        }
+        // setTimeout(()=>{
+        //     // document.querySelector('.container').classList.add('color-red')
+        //     // document.querySelector('.container').style.backgroundColor = 'red'
+
+        // }, 2000)
+
+        // console.log(getComputedStyle(document.querySelector('.container')));
+        
+        // function changeColor(classList) {
+        //     console.log(classList);
+        // }
+    </script> -->
+
+    <!-- <input type="button" value="Нажми на меня" id="elem">
+
+    <script>
+        let elem = document.querySelector('#elem')
+
+        function fun(event) {
+            console.log(event);
+        }
+
+        elem.addEventListener('click', fun)
+        
+        function getCoord(event) {
+            console.log(event.clientX, event.clientY)
+        } 
+        document.addEventListener('click', getCoord)
+        // elem.onclick = () => {console.log('Hello!')}
+        // elem.addEventListener('click', ()=>{console.log('Hello 2! ');})
+        // elem.addEventListener('click', ()=>{console.log('Hello 3! ');})
+
+    </script> -->
+</body>
+</html>
