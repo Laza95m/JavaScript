@@ -5,7 +5,6 @@
 
 body {
   background-color: antiquewhite;
-  z-index: 1;
 }
 
 /* 1. Задание */
@@ -75,7 +74,7 @@ body {
 
 /* 4. Задание */
 
-.container {
+/* .container {
   display: flex;
   margin: 1%;
 }
@@ -96,7 +95,6 @@ body {
   border-radius: 50%;
   width: 5vw;
   height: 10vh;
-  /* background-color: gray; */
   margin-left: 2%;
 }
 
@@ -117,14 +115,27 @@ body {
   background-color: antiquewhite;
 }
 
-.active_one {
+.active_red {
   background-color: red;
 }
 
-.active_two {
+.active_yellow {
   background-color: yellow;
 }
 
-.active_three {
+.active_green {
   background-color: green;
+} */
+
+/* 5. Задание */
+
+/* .container {
+  margin: 2%;
+  cursor: pointer;
 }
+
+.active_burlywood {
+  background-color: burlywood;
+} */
+
+/* 6. Задание */

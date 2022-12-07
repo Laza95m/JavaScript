@@ -67,14 +67,41 @@ function ballMove(event) {
 
 field.addEventListener("click", ballMove); */
 
-// 4. Задание https://ru.stackoverflow.com/questions/812091/js-%D0%9F%D1%80%D0%B8-%D0%BA%D0%BB%D0%B8%D0%BA%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D1%8C%D1%81%D1%8F-%D0%BD%D0%B0-%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B8%D0%B9-div
+// 4. Задание
 
-const item1 = document.querySelector(".item1");
-const firstCircle = document.querySelector(".item1 div:nth-of-type(1)");
+/* const firstCircle = document.querySelector(".item1 div:nth-of-type(1)");
 const secondCircle = document.querySelector(".item1 div:nth-of-type(2)");
 const thirdCircle = document.querySelector(".item1 div:nth-of-type(3)");
 const button = document.querySelector(".button");
 
-button.addEventListener("click", (e) => {
-  if (!item1.matches("active_one")) firstCircle.classList.add("active_one");
-});
+function changeColor(e) {
+  if (firstCircle.classList.contains("active_red")) {
+    firstCircle.classList.remove("active_red");
+    return secondCircle.classList.add("active_yellow");
+  } else if (secondCircle.classList.contains("active_yellow")) {
+    secondCircle.classList.remove("active_yellow");
+    thirdCircle.classList.add("active_green");
+  } else {
+    thirdCircle.classList.remove("active_green");
+    firstCircle.classList.add("active_red");
+  }
+}
+
+button.addEventListener("click", changeColor); */
+
+// 5. Задание
+
+/* const container = document.querySelector(".container");
+let old;
+
+function changeBackgroundColor(e) {
+  if (e.target.matches("li")) {
+    if (old) old.classList.remove("active_burlywood");
+    old = e.target;
+    old.classList.add("active_burlywood");
+  }
+}
+
+container.addEventListener("click", changeBackgroundColor); */
+
+// 6. Задание
