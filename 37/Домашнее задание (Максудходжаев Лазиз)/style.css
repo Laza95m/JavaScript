@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: antiquewhite;
+  z-index: 1;
+}
+
 /* 1. Задание */
 
 /* div {
@@ -8,3 +18,113 @@
   justify-content: center;
   height: 200px;
 } */
+
+/* 2. Задание */
+
+/* .buttonOpen {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 10px;
+}
+
+.container {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% 20%;
+  background-color: white;
+  width: 30%;
+  height: 100px;
+}
+
+.container input {
+  margin-top: 10px;
+  padding: 1%;
+  width: 60%;
+}
+
+.active {
+  display: flex;
+} */
+
+/* 3. Задание */
+
+/* .field {
+  border: 15px solid green;
+  background-image: url(/img/Futbolnoe_Pole.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 700px;
+  margin-top: 1%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ball {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  transition: all 1s;
+} */
+
+/* 4. Задание */
+
+.container {
+  display: flex;
+  margin: 1%;
+}
+
+.item1 {
+  border: 2px gray solid;
+  display: flex;
+  width: 20vw;
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 1%;
+}
+
+.item1 div {
+  border: 2px gray solid;
+  border-radius: 50%;
+  width: 5vw;
+  height: 10vh;
+  /* background-color: gray; */
+  margin-left: 2%;
+}
+
+.button {
+  width: 5vw;
+  height: 15vh;
+  border-radius: 10px;
+  border: 0px;
+  border-right: 2px gray solid;
+  border-bottom: 2px gray solid;
+}
+
+.button:hover {
+  background-color: lightgray;
+}
+
+.button:active {
+  background-color: antiquewhite;
+}
+
+.active_one {
+  background-color: red;
+}
+
+.active_two {
+  background-color: yellow;
+}
+
+.active_three {
+  background-color: green;
+}
