@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: antiquewhite;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .greeting_text {
+        text-align: right;
+      }
+
+      .info {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .infoForm_item {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+      }
+
+      .infoForm_item label {
+        text-align: start;
+      }
+
+      .infoForm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 10px;
+      }
+
+      label {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="greeting_text">
+        <span id="greeting"></span>
+        <a href="sign_up.html" id="exit">exit</a>
+      </div>
+      <hr style="width: 100%" />
+      <div class="info">
+        <h1>User Info</h1>
+        <form action="" id="infoForm" class="infoForm">
+          <div class="infoForm_item">
+            <label for="firstName">First Name: </label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+              maxlength="20"
+            />
+          </div>
+          <div class="infoForm_item">
+            <label for="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+              maxlength="20"
+            />
+          </div>
+          <div class="infoForm_item">
+            <label for="birthYear"
+              >Year of birth:
+              <span style="color: red" id="yearOfBirthError"></span
+            ></label>
+            <input
+              type="text"
+              id="birthYear"
+              name="birthYear"
+              required
+              maxlength="4"
+            />
+          </div>
+          <div class="infoForm_item">
+            <label for="gender">Last Name:</label>
+            <select name="gender" id="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="infoForm_item">
+            <label for="phone">Phone number:</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              minlength="10"
+              maxlength="12"
+            />
+          </div>
+          <div class="infoForm_item">
+            <label for="skype">Skype:</label>
+            <input type="text" id="skype" name="skype" />
+          </div>
+          <button type="submit" style="grid-column: span 2">Save</button>
+        </form>
+      </div>
+    </div>
+    <script src="/info.js"></script>
+  </body>
+</html>
