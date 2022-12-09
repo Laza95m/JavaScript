@@ -5,4 +5,43 @@
 
 body {
   background-color: bisque;
+  font-size: x-large;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.container {
+  display: grid;
+  grid-template: ". . .";
+  gap: 2vw;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.user_name {
+  border: 2px gray solid;
+  width: 13vw;
+  padding: 5%;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px gray solid;
+  padding: 2%;
+}
+
+tr td:nth-of-type(1) {
+  width: 15vw;
+}
+
+tr td:nth-of-type(2) {
+  width: 30vw;
 }
