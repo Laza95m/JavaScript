@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        background-color: antiquewhite;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .game-control {
+        width: 100px;
+        height: max-content;
+    }
+
+    .cards-container{
+        margin: 0 auto;
+        display: flex;
+        width: 60%;
+        flex-wrap: wrap;
+    }
+
+    .cards-container__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        width: 200px;
+        height: 250px;
+        margin: 5px;
+        background: rgb(255, 169, 169);
+        transition: transform linear 0.8s;
+    }
+
+    .cards-container__card--covered {
+        transform: scaleX(0.0);
+        transition: transform linear 0.8s;
+    }
+
+    .test {
+        background: red !important;
+        color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h4>Game "MEMORY"</h4>
+        <button id="btn" class="game-control"> START</button>
+    </div>
+    <hr>
+    <div class="cards-container" id="cardsContainer">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

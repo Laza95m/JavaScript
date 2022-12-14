@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h2>Create new color</h2>
+    <form action="" class="form">
+      <label for=""><b>Color:</b></label>
+      <div class="errorColor">11111</div>
+      <input type="text" name="" id="inputColor" autocomplete="off" required />
+
+      <label for=""><b>Type:</b></label>
+      <div class="errorType">2</div>
+      <select name="" id="selectType">
+        <option value="">RGB</option>
+        <option value="">RGBA</option>
+        <option value="">HEX</option>
+      </select>
+
+      <label for=""><b>Code:</b></label>
+      <div class="errorCode">3</div>
+      <input type="text" name="" id="inputCode" autocomplete="off" />
+
+      <input type="submit" value="Save" id="inputSave" autocomplete="off" />
+    </form>
+    <h2>All colors</h2>
+    <div class="container">
+      <div class="item_1">
+        <div>
+          <p>YELLOWGREEN</p>
+          <p>RGB</p>
+          <h4>154, 205, 50</h4>
+        </div>
+      </div>
+      <div class="item_2">
+        <div>
+          <p>DARKCYAN</p>
+          <p>RGBA</p>
+          <h4>0, 139, 139, 1</h4>
+        </div>
+      </div>
+      <div class="item_3">
+        <div>
+          <p>ORANGERED</p>
+          <p>HEX</p>
+          <h4>#FF4500</h4>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
